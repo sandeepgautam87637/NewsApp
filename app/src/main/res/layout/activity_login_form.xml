@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow3"
+    tools:context=".Login_Form">
+
+    <TextView
+        android:id="@+id/signintxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif"
+        android:text="LogIn"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/logintxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signintxt"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/grey"
+        android:text="Login to use our Features"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/logintxt"
+        android:background="@drawable/layout_drawable"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:id="@+id/email"
+            android:hint="Email"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:id="@+id/password"
+            android:hint="Password"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="55dp"
+                android:text="Remainder me"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SignIn"
+                android:id="@+id/forget"
+                android:layout_marginTop="6dp"
+                android:textAlignment="center"
+                android:paddingLeft="50dp"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:id="@+id/login"
+            android:text="SignIn"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_rounded"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

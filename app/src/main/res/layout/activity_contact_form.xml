@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".ContactForm">
+
+    <ImageView
+        android:id="@+id/conimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/contac" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/conimg"
+        android:id="@+id/layoutist">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Contact Form"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="75dp"
+            android:id="@+id/backimg"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Back"
+            android:id="@+id/back"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layoutsec"
+        android:layout_below="@id/layoutist"
+        android:layout_marginTop="60dp"
+        >
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/editroundcon"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Your name"
+            android:id="@+id/name"
+            android:paddingLeft="30dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/editroundcon"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Your email"
+            android:layout_marginTop="8dp"
+            android:paddingRight="10dp"
+            android:id="@+id/email"
+            android:paddingLeft="30dp"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/editroundcon"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Your phone number"
+            android:layout_marginTop="8dp"
+            android:paddingRight="10dp"
+            android:id="@+id/phonenumber"
+            android:paddingLeft="30dp"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btnconedit"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="18sp"
+            android:id="@+id/send"
+            android:textAllCaps="false"
+            android:layout_marginTop="8dp"
+            android:text="Send"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

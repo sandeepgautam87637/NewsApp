@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="'Roboto', sans-serif"
+        android:id="@+id/titlenews"
+        android:text="The Tribune"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="42dp"
+        android:layout_toRightOf="@id/titlenews"
+        android:text="Logout"
+        android:paddingRight="10dp"
+        android:id="@+id/logout"
+        android:textSize="18sp"
+        android:layout_marginTop="29dp"
+        android:backgroundTint="@color/grey"
+        android:background="@drawable/btnconedit"
+        android:textColor="@color/white"
+        android:layout_marginLeft="28dp"/>
+
+    <com.smarteist.autoimageslider.SliderView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/slider"
+        android:layout_below="@+id/titlenews"
+        android:layout_marginTop="20dp"
+        app:sliderAnimationDuration="700"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderIndicatorEnabled="true"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderStartAutoCycle="true"
+        app:sliderIndicatorSelectedColor="#c1c2"
+        app:sliderIndicatorUnselectedColor="@color/black"
+        />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slider"
+        android:layout_marginTop="15.
+        1
+        dp"
+
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Home" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Categories" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Contact Us" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tablayout"
+        android:layout_marginTop="34dp"
+        android:id="@+id/rec2">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/frame"/>
+
+</RelativeLayout>

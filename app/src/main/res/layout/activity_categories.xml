@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoriesActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ly"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/cattxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Categories"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="175dp"
+        android:layout_height="42dp"
+        android:layout_toRightOf="@id/cattxt"
+        android:id="@+id/backbtn"
+        android:text="Back"
+        android:paddingRight="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/grey"
+        android:background="@drawable/btnconedit"
+        android:textColor="@color/white"
+        android:layout_marginLeft="28dp"/>
+
+
+</LinearLayout>
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ly"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:text="Politics"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/grey"
+            android:textColor="@color/white"
+            android:id="@+id/politics"/>
+
+        <Button
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:text="Business"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/grey"
+            android:textColor="@color/white"
+            android:id="@+id/business"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:text="Foods"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/grey"
+            android:textColor="@color/white"
+            android:id="@+id/foods"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:text="Travel"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/grey"
+            android:textColor="@color/white"
+            android:id="@+id/travel"/>
+
+        <Button
+            android:layout_width="165dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:text="Enterntainment"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/grey"
+            android:textColor="@color/white"
+            android:id="@+id/enterntainment"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:text="Health"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/grey"
+            android:textColor="@color/white"
+            android:id="@+id/health"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:text="Sports"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/grey"
+            android:textColor="@color/white"
+            android:id="@+id/sports"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:text="Education"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/grey"
+            android:textColor="@color/white"
+            android:id="@+id/education"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:text="Technology"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/grey"
+            android:textColor="@color/white"
+            android:id="@+id/technology"/>
+
+
+
+
+    </LinearLayout>
+</HorizontalScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/framel"
+        />
+
+</RelativeLayout>
